@@ -3,22 +3,25 @@
 <head>
 
   <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '4412601325667077');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=4412601325667077&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    fbq('init', '4412601325667077');
+    fbq('track', 'PageView');
+    fbq('track', 'ViewContent');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=4412601325667077&ev=PageView&noscript=1" />
+  </noscript>
+  <!-- End Meta Pixel Code -->
   
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -74,48 +77,19 @@ src="https://www.facebook.com/tr?id=4412601325667077&ev=PageView&noscript=1"
       width: 130px;
       height: 130px;
       border-radius: 50%;
-      background:
-        radial-gradient(circle at 50% 35%, #8b0000 0%, #5c0000 55%, #360000 100%);
-      border: 4px solid #e6bd56;
+      overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
+      border: 4px solid #e6bd56;
       box-shadow: inset 0 0 18px rgba(0,0,0,.45);
     }
 
-    .logo-inner::before {
-      content: "♛";
-      position: absolute;
-      top: 7px;
-      color: #f4d36c;
-      font-size: 30px;
-      line-height: 1;
-    }
-
-    .logo-k {
-      color: #fff;
-      font-family: Georgia, serif;
-      font-size: 48px;
-      font-weight: 700;
-      margin-top: 8px;
-      text-shadow: 0 2px 3px rgba(0,0,0,.5);
-    }
-
-    .logo-name {
-      position: absolute;
-      bottom: 17px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 78px;
-      padding: 2px 4px;
-      border-radius: 5px;
-      background: linear-gradient(90deg, #6b0000, #b77913, #6b0000);
-      border: 1px solid #f0ca68;
-      color: #fff;
-      font-size: 8px;
-      font-weight: 800;
-      letter-spacing: .4px;
+    .logo-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     /* Heading */
@@ -171,6 +145,7 @@ src="https://www.facebook.com/tr?id=4412601325667077&ev=PageView&noscript=1"
 
       transition: all .25s ease;
       border: 1px solid rgba(255,255,255,.25);
+      cursor: pointer;
     }
 
     .cta:hover {
@@ -248,7 +223,6 @@ src="https://www.facebook.com/tr?id=4412601325667077&ev=PageView&noscript=1"
 
     /* Mobile */
     @media (max-width: 480px) {
-
       .page {
         padding: 14px 16px 40px;
       }
@@ -293,7 +267,6 @@ src="https://www.facebook.com/tr?id=4412601325667077&ev=PageView&noscript=1"
     }
 
     @media (max-width: 350px) {
-
       h1 {
         font-size: 26px;
       }
@@ -326,8 +299,7 @@ src="https://www.facebook.com/tr?id=4412601325667077&ev=PageView&noscript=1"
     <!-- LOGO -->
     <div class="logo-wrap">
       <div class="logo-inner">
-        <div class="logo-k">K</div>
-        <div class="https://ads.netadexpert.com/wp-content/uploads/2026/09/PHOTO-2026-09-15-11-40-32.jpg">shatty</div>
+        <img class="logo-img" src="https://ads.netadexpert.com/wp-content/uploads/2026/09/PHOTO-2026-09-15-11-40-32.jpg" alt="Shatty App Logo">
       </div>
     </div>
 
@@ -341,6 +313,7 @@ src="https://www.facebook.com/tr?id=4412601325667077&ev=PageView&noscript=1"
 
     <!-- DOWNLOAD BUTTON -->
     <a
+      id="ctaBtn"
       class="cta"
       href="https://shettymatka.com/"
       target="_blank"
@@ -364,7 +337,6 @@ src="https://www.facebook.com/tr?id=4412601325667077&ev=PageView&noscript=1"
         </div>
       </div>
 
-
       <div class="feature-card">
         <div class="feature-title">
           <span class="feature-icon">⬟</span>
@@ -375,7 +347,6 @@ src="https://www.facebook.com/tr?id=4412601325667077&ev=PageView&noscript=1"
           Your data stays protected.
         </div>
       </div>
-
 
       <div class="feature-card">
         <div class="feature-title">
@@ -395,6 +366,17 @@ src="https://www.facebook.com/tr?id=4412601325667077&ev=PageView&noscript=1"
     </div>
 
   </main>
+
+  <!-- META EVENT SCRIPT FOR CTA CLICK -->
+  <script>
+    document.getElementById('ctaBtn').addEventListener('click', function(e) {
+      if (typeof fbq !== 'undefined') {
+        // Fires both Lead and Subscribe to ensure tracking irrespective of campaign optimization
+        fbq('track', 'Lead');
+        fbq('track', 'Subscribe');
+      }
+    });
+  </script>
 
 </body>
 </html>
